@@ -1,0 +1,9 @@
+.Tooltip {
+  margin-left: 1rem;
+
+  font-size: 2rem;
+
+  color: #18181b;
+
+  cursor: help;
+}

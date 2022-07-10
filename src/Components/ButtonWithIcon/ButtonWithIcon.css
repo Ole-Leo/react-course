@@ -1,0 +1,23 @@
+.BtnWithIcon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 10px 16px 8px;
+
+  font-family: inherit;
+  font-weight: 300;
+  text-transform: uppercase;
+
+  color: #18181b;
+  background-color: #faf3f3;
+  border: 1px solid #18181b;
+
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.BtnWithIcon:hover {
+  color: #faf3f3;
+  background-color: #18181b;
+}
