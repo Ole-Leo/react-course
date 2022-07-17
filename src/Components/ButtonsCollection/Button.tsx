@@ -3,7 +3,7 @@ import { cn } from '@bem-react/classname';
 
 import './Button.css';
 
-const button = cn('Button');
+const cnButton = cn('Button');
 
 type ButtonProps = {
   btnText: string;
@@ -14,7 +14,7 @@ type ButtonProps = {
 const Button: FC<ButtonProps> = ({ btnText, status, disabled }) => {
   return (
     <button
-      className={button({
+      className={cnButton({
         status: status,
       })}
       disabled={disabled}

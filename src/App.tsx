@@ -14,14 +14,14 @@ import cherryTree from './Components/Icon/assets/cherryTree.svg';
 
 import './App.css';
 
-const wrapper = cn('Wrapper');
+const cnApp = cn('App');
 const description = cn('Description');
 
 const App: FC = () => {
   return (
-    <div className={wrapper()}>
+    <div className={cnApp()}>
       <FirstButton btnText="button" />
-      <div className={wrapper('btn')}>
+      <div className={cnApp('btn')}>
         <Button btnText="button" />
         <Button btnText="button" status="active" />
         <Button btnText="button" disabled={true} />
@@ -33,7 +33,7 @@ const App: FC = () => {
         <h2 className={description()}>Loading</h2>
         <h2 className={description()}>Danger</h2>
       </div>
-      <div className={wrapper('icon')}>
+      <div className={cnApp('icon')}>
         <Icon name={shibainu} size="86" />
         <Icon name={fuji} size="86" />
         <Icon name={fox} size="86" />
@@ -45,7 +45,7 @@ const App: FC = () => {
         <TextWithIcon name={cherryTree} size="36" text="Cherry tree" />
       </div>
       <div>
-        <WithTooltip tooltipText="Tooltip" />
+        <WithTooltip btnText="button &#8658;" tooltipText="Tooltip" />
       </div>
     </div>
   );

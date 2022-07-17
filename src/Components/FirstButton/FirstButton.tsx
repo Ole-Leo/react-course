@@ -3,14 +3,14 @@ import { cn } from '@bem-react/classname';
 
 import './FirstButton.css';
 
-const firstButton = cn('FirstButton');
+const cnFirstButton = cn('FirstButton');
 
 type FirstButtonProps = {
   btnText: string;
 };
 
 const FirstButton: FC<FirstButtonProps> = ({ btnText }) => {
-  return <button className={firstButton()}>{btnText}</button>;
+  return <button className={cnFirstButton()}>{btnText}</button>;
 };
 
 export default FirstButton;

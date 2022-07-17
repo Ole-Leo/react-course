@@ -4,7 +4,7 @@ import { cn } from '@bem-react/classname';
 import './ButtonWithIcon.css';
 import Icon from '../Icon/Icon';
 
-const btnWithIcon = cn('BtnWithIcon');
+const cnBtnWithIcon = cn('BtnWithIcon');
 
 type ButtonWithIconProps = {
   text: string;
@@ -14,7 +14,7 @@ type ButtonWithIconProps = {
 
 const ButtonWithIcon: FC<ButtonWithIconProps> = ({ icon, text, size }) => {
   return (
-    <button className={btnWithIcon()} style={{ fontSize: `${size}px` }}>
+    <button className={cnBtnWithIcon()}>
       {icon && <Icon name={icon} size={size} />}
       {text}
     </button>

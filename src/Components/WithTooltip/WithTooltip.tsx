@@ -4,21 +4,23 @@ import Button from '../ButtonsCollection/Button';
 
 import './WithTooltip.css';
 
-const tooltip = cn('Tooltip');
+const cnTooltip = cn('Tooltip');
 
 type WithTooltipProps = {
+  btnText: string;
   tooltipText: string;
   tooltipMark?: string;
 };
 
 const WithTooltip: FC<WithTooltipProps> = ({
+  btnText,
   tooltipText,
   tooltipMark = '?',
 }) => {
   return (
     <div>
-      <Button btnText="button &#8658;" />
-      <span className={tooltip()} title={tooltipText}>
+      <Button btnText={btnText} />
+      <span className={cnTooltip()} title={tooltipText}>
         {tooltipMark}
       </span>
     </div>
