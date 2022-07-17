@@ -1,0 +1,8 @@
+.TextWithIcon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-weight: 300;
+  letter-spacing: -1px;
+}
